@@ -1,3 +1,14 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .models import Episode, Character
+from .serializers import EpisodeSerializer, CharacterSerializer
 
-# Create your views here.
+class Episode_View(viewsets.ModelViewSet):
+    queryset = Episode.objects.all()
+    serializer_class = EpisodeSerializer
+
+class Character_View(viewsets.ModelViewSet):
+    queryset = Character.objects.all()     
+    serializer_class = CharacterSerializer
+
+    
+
