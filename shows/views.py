@@ -1,3 +1,5 @@
+# shows/views.py
+
 from rest_framework import viewsets
 from .models import Episode, Character
 from .serializers import EpisodeSerializer, CharacterSerializer

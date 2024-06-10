@@ -5,6 +5,6 @@ from .views import (
 )
 
 urlpatterns = [
-    path('signup/', user_create_view.as_view(), name= 'signup')
+    path('signup/', user_create_view.as_view(), name= 'signup'),
     path('profile/<int:pk>', user_profile_view.as_view(), name= 'profile')
 ]

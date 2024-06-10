@@ -1,3 +1,5 @@
+# config/urls.py
+
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework_simplejwt.views import (
@@ -13,7 +15,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('usres/', include('user.urls')),
+    path('', HomeView.as_view(), name='home'),  
+    path('usres/', include('users.urls')),
     path('posts/', include('posts.urls')),
     path('admin/', admin.site.urls),
     path('api/token/', TokenObtainPairView.as_view(), name='Token_Obtain_Pair'),
