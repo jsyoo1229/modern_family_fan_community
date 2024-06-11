@@ -16,7 +16,6 @@ from django.conf.urls.static import static
 from .views import IndexView
 
 urlpatterns = [
-    path('', HomeView.as_view(), name='home'),  
     path('usres/', include('users.urls')),
     path('posts/', include('posts.urls')),
     path('admin/', admin.site.urls),
@@ -25,7 +24,7 @@ urlpatterns = [
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     path('api/schema/swagger-ui/', SpectacularSwaggerView.as_view(), name= 'Swagger-UI'),
     path('api/shema/redoc/', SpectacularRedocView.as_view(), name= 'redoc'),
-    path('', IndexView/as_view(), name='index'),
+    path('', IndexView.as_view(), name='index'),
 
 ]
 

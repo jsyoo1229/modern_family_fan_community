@@ -8,7 +8,7 @@ class user_create_view(generics.CreateAPIView):
     queryset = user.objects.all()
     serializer_class = UserSerializer
 
-class user_profile_view(generics.RetreiveUpdateDestroyAPIView):
+class user_profile_view(generics.RetrieveUpdateDestroyAPIView):
     queryset = user.objects.all()
     serializer_class = UserSerializer
     permission_classes = [permissions.IsAuthenticated]
