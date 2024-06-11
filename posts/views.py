@@ -1,11 +1,8 @@
-# posts/views.py
-
 from rest_framework import viewsets, generics,  response, status, views, permissions
 from rest_framework.permissions import IsAuthenticated
 from .models import Post, Comment, Like
 from .serializers import PostSerializer, CommentSerializer, LikeSerializer
 from django.shortcuts import get_object_or_404
-
 
 class PostViewSet(viewsets.ModelViewSet):
     queryset = Post.objects.all()

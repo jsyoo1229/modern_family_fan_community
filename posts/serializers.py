@@ -1,7 +1,6 @@
-# posts/serializers.py
-
 from rest_framework import serializers
 from .models import Post, Comment, Like
+# posts/serializers.py
 
 class CommentSerializer(serializers.ModelSerializer):
     author_username = serializers.ReadOnlyField(source='author.username')

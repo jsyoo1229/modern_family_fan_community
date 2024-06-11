@@ -13,6 +13,7 @@ from drf_spectacular.views import (
 )
 from django.conf import settings
 from django.conf.urls.static import static
+from .views import IndexView
 
 urlpatterns = [
     path('', HomeView.as_view(), name='home'),  
@@ -23,7 +24,8 @@ urlpatterns = [
     path('api/token/refresh/', TokenRefreshView.as_view(), name='Token_Refresh'),
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     path('api/schema/swagger-ui/', SpectacularSwaggerView.as_view(), name= 'Swagger-UI'),
-    path('api/shema/redoc/', SpectacularRedocView.as_view(), name= 'redoc')
+    path('api/shema/redoc/', SpectacularRedocView.as_view(), name= 'redoc'),
+    path('', IndexView/as_view(), name='index'),
 
 ]
 
