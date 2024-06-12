@@ -507,40 +507,23 @@
 
           <div class="col-lg-8">
             <div class="row g-5">
+              {% for post in posts %}
               <div class="col-lg-4 border-start custom-border">
                 <div class="post-entry-1">
-                  <a href="single-post.html"><img src="{% static 'img/post-landscape-6.jpg' %}" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Lifestyle</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                  <h2><a href="single-post.html">Let’s Get Back to Work, New York</a></h2>
-                </div>
-                <div class="post-entry-1">
-                  <a href="single-post.html"><img src="{% static 'img/post-landscape-5.jpg' %}" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Lifestyle</span> <span class="mx-1">&bullet;</span> <span>Jul 17th '22</span></div>
-                  <h2><a href="single-post.html">How to Avoid Distraction and Stay Focused During Video Calls?</a></h2>
-                </div>
-                <div class="post-entry-1">
-                  <a href="single-post.html"><img src="{% static 'img/post-landscape-4.jpg' %}" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Lifestyle</span> <span class="mx-1">&bullet;</span> <span>Mar 15th '22</span></div>
-                  <h2><a href="single-post.html">Why Craigslist Tampa Is One of The Most Interesting Places On the Web?</a></h2>
+                  <a href="{% url 'posts-detail' pk=post.id %}">
+                    <img src="{{ post.image.url }}" alt="" class="img-fluid">
+                  </a>
+                  <div class="post-meta">
+                    <span class="date">{{ post.category }}</span>
+                    <span class="mx-1">&bullet;</span>
+                    <span>{{ post.created_at|date:"M d, Y" }}</span>
+                  </div>
+                  <h2><a href="{% url 'posts-detail' pk=post.id %}">{{ post.title }}</a></h2>
+                  <p>{{ post.content|truncatewords:20 }}</p>
                 </div>
               </div>
-              <div class="col-lg-4 border-start custom-border">
-                <div class="post-entry-1">
-                  <a href="single-post.html"><img src="{% static 'img/post-landscape-3.jpg' %}" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Lifestyle</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                  <h2><a href="single-post.html">6 Easy Steps To Create Your Own Cute Merch For Instagram</a></h2>
-                </div>
-                <div class="post-entry-1">
-                  <a href="single-post.html"><img src="{% static 'img/post-landscape-2.jpg' %}" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Lifestyle</span> <span class="mx-1">&bullet;</span> <span>Mar 1st '22</span></div>
-                  <h2><a href="single-post.html">10 Life-Changing Hacks Every Working Mom Should Know</a></h2>
-                </div>
-                <div class="post-entry-1">
-                  <a href="single-post.html"><img src="{% static 'img/post-landscape-1.jpg' %}" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Lifestyle</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                  <h2><a href="single-post.html">5 Great Startup Tips for Female Founders</a></h2>
-                </div>
-              </div>
+              {% endfor %}
+              
               <div class="col-lg-4">
 
                 <div class="post-entry-1 border-bottom">
