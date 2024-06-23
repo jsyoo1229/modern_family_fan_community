@@ -1,8 +1,10 @@
+# posts/views.py
 from rest_framework import viewsets, generics,  response, status, views, permissions
 from rest_framework.permissions import IsAuthenticated
 from .models import Post, Comment, Like
 from .serializers import PostSerializer, CommentSerializer, LikeSerializer
 from django.shortcuts import get_object_or_404
+from django.views.generic import TemplateView
 
 class PostViewSet(viewsets.ModelViewSet):
     queryset = Post.objects.all()
@@ -38,3 +40,6 @@ class LikeCreateView(views.APIView):
         like = get_object_or_404(Like, post=post, user=request.user)
         like.delete()
         return response.Response(status=status.HTTP_204_NO_CONTENT)
+    
+class CategoryView(TemplateView):
+    template_name = 'category.html'

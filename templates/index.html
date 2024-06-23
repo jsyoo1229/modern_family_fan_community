@@ -1,3 +1,4 @@
+ <!-- index.html -->
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -55,7 +56,7 @@
         <ul>
           <li><a href="index.html">Blog</a></li>
           <li><a href="single-post.html">Single Post</a></li>
-          <li class="dropdown"><a href="category.html"><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <a href="#" data-category><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="search-result.html">Search Result</a></li>
               <li><a href="#">Drop Down 1</a></li>
@@ -589,7 +590,7 @@
             <ul class="footer-links list-unstyled">
               <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
               <li><a href="index.html"><i class="bi bi-chevron-right"></i> Blog</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Categories</a></li>
+              <li><a href="#" data-category><i class="bi bi-chevron-right"></i> Categories</a></li>
               <li><a href="single-post.html"><i class="bi bi-chevron-right"></i> Single Post</a></li>
               <li><a href="about.html"><i class="bi bi-chevron-right"></i> About us</a></li>
               <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
@@ -709,6 +710,18 @@
 
   <!-- Template Main JS File -->
   <script src="{% static 'js/main.js' %}"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const categoryLink = document.querySelector('[data-category]');
+      
+      categoryLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = '/posts/lists/';
+      });
+    });
+  </script>
+ 
 
 </body>
 

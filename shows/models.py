@@ -1,3 +1,4 @@
+#shows/models.py
 from django.db import models
 
 class Episode(models.Model):
