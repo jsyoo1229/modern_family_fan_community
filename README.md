@@ -79,7 +79,6 @@ https://github.com/jsyoo1229/modern_family_fan_community
 
 ## 기능 명세 ##
 ```mermaid
-graph TD
     A[사용자 계정 관리] --> B[회원가입]
     A --> C[로그인]
     A --> D[로그아웃]
