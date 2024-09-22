@@ -38,6 +38,64 @@ https://github.com/jsyoo1229/modern_family_fan_community
 [![Git](https://img.shields.io/badge/Git-black?style=for-the-badge&logo=Git)](https://git-scm.com/)
 [![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=GitHub)](https://github.com/)
 
+
+## 프로젝트 폴더 구조
+📁 modern_family_fan_community <br>
+├── 📁 config <br>
+├── 📁 frontend <br>
+│   ├── 📁 migrations <br>
+│   ├── 📁 node_modules <br>
+│   ├── 📁 public <br>
+│   ├── 📁 src <br>
+│   │   ├── 📁 assets <br>
+│   │   ├── 📁 components <br>
+│   │   ├── 📁 pages <br>
+│   │   ├── 📄 App.css <br>
+│   │   ├── 📄 App.js <br>
+│   │   ├── 📄 index.js <br>
+│   ├── 📁 static <br>
+│   ├── 📄 _init_.py <br>
+│   ├── 📄 admin.py <br>
+│   ├── 📄 apps.py <br>
+│   ├── 📄 babel.config.json <br>
+│   ├── 📄 models.py <br>
+│   ├── 📄 package-lock.json <br>
+│   ├── 📄 package.json <br>
+│   ├── 📄 tests.py <br>
+│   ├── 📄 views.py <br>
+│   ├── 📄 webpack.config.js <br>
+├── 📁 media <br>
+│   ├── 📁 post_images <br>
+├── 📁 node_modules <br>
+├── 📁 posts <br>
+│   ├── 📄 models.py <br>
+│   ├── 📄 serializers.py <br>
+│   ├── 📄 tests.py <br>
+│   ├── 📄 urls.py <br>
+│   ├── 📄 views.py <br>
+├── 📁 users <br>
+│   ├── 📄 models.py <br>
+│   ├── 📄 serializers.py <br>
+│   ├── 📄 tests.py <br>
+│   ├── 📄 urls.py <br>
+│   ├── 📄 views.py <br>
+├── 📁 shows <br>
+│   ├── 📄 models.py <br>
+│   ├── 📄 serializers.py <br>
+│   ├── 📄 tests.py <br>
+│   ├── 📄 urls.py <br>
+│   ├── 📄 views.py <br>
+├── 📁 static <br>
+├── 📁 staticfiles <br>
+├── 📁 venv <br>
+├── 📄 manage.py <br>
+├── 📄 requirements.txt <br>
+├── 📄 .gitignore <br>
+├── 📄 db.sqlite3 <br>
+├── 📄 package-lock.json <br>
+├── 📄 package.json <br>
+
+
 ## URL 구조 ##
 
 * **config**
@@ -201,6 +259,13 @@ erDiagram
 ![스크랩](https://github.com/user-attachments/assets/956a2747-a069-4892-8452-e88a0f21e651)
 
 
+## 트러블 슈팅
+* 토큰 인증 오류
+가장 큰 난관은 토큰 관련 오류였습니다. 회원가입과 로그인은 물론, CRUD 기능에서도 토큰
+
+## 느낀점
+* 프론트엔드 코드에 대한 기본적인 이해 필요
+* 모델링과 인증 기능
 
 
 
