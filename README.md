@@ -40,60 +40,60 @@ https://github.com/jsyoo1229/modern_family_fan_community
 
 
 ## 프로젝트 폴더 구조
-📁 modern_family_fan_community <br>
-├── 📁 config <br>
-├── 📁 frontend <br>
-│   ├── 📁 migrations <br>
-│   ├── 📁 node_modules <br>
-│   ├── 📁 public <br>
-│   ├── 📁 src <br>
-│   │   ├── 📁 assets <br>
-│   │   ├── 📁 components <br>
-│   │   ├── 📁 pages <br>
-│   │   ├── 📄 App.css <br>
-│   │   ├── 📄 App.js <br>
-│   │   ├── 📄 index.js <br>
-│   ├── 📁 static <br>
-│   ├── 📄 _init_.py <br>
-│   ├── 📄 admin.py <br>
-│   ├── 📄 apps.py <br>
-│   ├── 📄 babel.config.json <br>
-│   ├── 📄 models.py <br>
-│   ├── 📄 package-lock.json <br>
-│   ├── 📄 package.json <br>
-│   ├── 📄 tests.py <br>
-│   ├── 📄 views.py <br>
-│   ├── 📄 webpack.config.js <br>
-├── 📁 media <br>
-│   ├── 📁 post_images <br>
-├── 📁 node_modules <br>
-├── 📁 posts <br>
-│   ├── 📄 models.py <br>
-│   ├── 📄 serializers.py <br>
-│   ├── 📄 tests.py <br>
-│   ├── 📄 urls.py <br>
-│   ├── 📄 views.py <br>
-├── 📁 users <br>
-│   ├── 📄 models.py <br>
-│   ├── 📄 serializers.py <br>
-│   ├── 📄 tests.py <br>
-│   ├── 📄 urls.py <br>
-│   ├── 📄 views.py <br>
-├── 📁 shows <br>
-│   ├── 📄 models.py <br>
-│   ├── 📄 serializers.py <br>
-│   ├── 📄 tests.py <br>
-│   ├── 📄 urls.py <br>
-│   ├── 📄 views.py <br>
-├── 📁 static <br>
-├── 📁 staticfiles <br>
-├── 📁 venv <br>
-├── 📄 manage.py <br>
-├── 📄 requirements.txt <br>
-├── 📄 .gitignore <br>
-├── 📄 db.sqlite3 <br>
-├── 📄 package-lock.json <br>
-├── 📄 package.json <br>
+📂modern_family_fan_community <br>
+┣ 📂config <br>
+┣ 📂frontend <br>
+┃ ┣ 📂migrations <br>
+┃ ┣ 📂node_modules <br>
+┃ ┣ 📂public <br>
+┃ ┣ 📂src <br>
+┃ ┃ ┣ 📂assets <br>
+┃ ┃ ┣ 📂components <br>
+┃ ┃ ┣ 📂pages <br>
+┃ ┃ ┣ 📜 App.css <br>
+┃ ┃ ┣ 📜 App.js <br>
+┃ ┃ ┣ 📜 index.js <br>
+┃ ┣ 📂static <br>
+┃ ┣ 📜 _init_.py <br>
+┃ ┣ 📜 admin.py <br>
+┃ ┣ 📜 apps.py <br>
+┃ ┣ 📜 babel.config.json <br>
+┃ ┣ 📜 models.py <br>
+┃ ┣ 📜 package-lock.json <br>
+┃ ┣ 📜 package.json <br>
+┃ ┣ 📜 tests.py <br>
+┃ ┣ 📜 views.py <br>
+┃ ┣ 📜 webpack.config.js <br>
+┣ 📂media <br>
+┃ ┣ 📂post_images <br>
+┣ 📂node_modules <br>
+┣ 📂posts <br>
+┃ ┣ 📜 models.py <br>
+┃ ┣ 📜 serializers.py <br>
+┃ ┣ 📜 tests.py <br>
+┃ ┣ 📜 urls.py <br>
+┃ ┣ 📜 views.py <br>
+┣ 📂users <br>
+┃ ┣ 📜 models.py <br>
+┃ ┣ 📜 serializers.py <br>
+┃ ┣ 📜 tests.py <br>
+┃ ┣ 📜 urls.py <br>
+┃ ┣ 📜 views.py <br>
+┣ 📂shows <br>
+┃ ┣ 📜 models.py <br>
+┃ ┣ 📜 serializers.py <br>
+┃ ┣ 📜 tests.py <br>
+┃ ┣ 📜 urls.py <br>
+┃ ┣ 📜 views.py <br>
+┣ 📂static <br>
+┣ 📂staticfiles <br>
+┣ 📂venv <br>
+┣ 📜 manage.py <br>
+┣ 📜 requirements.txt <br>
+┣ 📜 .gitignore <br>
+┣ 📜 db.sqlite3 <br>
+┣ 📜 package-lock.json <br>
+┣ 📜 package.json <br>
 
 
 ## URL 구조 ##
