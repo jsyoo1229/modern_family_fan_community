@@ -78,7 +78,7 @@ https://github.com/jsyoo1229/modern_family_fan_community
 | users | /users/scraps/           | GET         | 현재 사용자의 스크랩한 게시물 목록을 조회    |
 
 ## 기능 명세 ##
-```mermaid
+    graph TD
     A[사용자 계정 관리] --> B[회원가입]
     A --> C[로그인]
     A --> D[로그아웃]
@@ -94,7 +94,7 @@ https://github.com/jsyoo1229/modern_family_fan_community
 
     N[좋아요 및 스크랩 기능] --> O[좋아요]
     N --> P[스크랩]
-```
+
 
 
 
