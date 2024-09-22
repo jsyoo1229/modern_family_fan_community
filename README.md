@@ -152,7 +152,7 @@ erDiagram
 ```
 
 
-## 6. 와이어프레임
+## 와이어프레임
 * Home
 ![모던패밀리  Home](https://github.com/user-attachments/assets/d434240d-6c30-4362-8208-45c7d4c0f00e)
 
@@ -169,7 +169,7 @@ erDiagram
 ![모던패밀리  Scrapped Posts](https://github.com/user-attachments/assets/c76c4818-28b8-47e6-9ccc-866821b0858a)
 
 
-## 7. 화면 설계  
+## 화면 설계  
 * Home
 ![홈_로그인전](https://github.com/user-attachments/assets/914a7305-42ab-4d3d-9fe4-3bc302d22751)
 
@@ -179,25 +179,25 @@ erDiagram
 * 로그인
 ![로그인](https://github.com/user-attachments/assets/2ab96ea3-e5bd-49cc-8fc2-ad5399ed3f55)
 
-* 홈_조회수_상위_3개_게시글
+* 홈 조회수 상위 5개 게시글
 ![홈_조회수순](https://github.com/user-attachments/assets/30bc27fd-7033-4517-9539-d75f3df3f967)
 
-* 홈_좋아요_상위_7개_게시글
+* 홈 좋아요 상위 7개 게시글
 ![홈_좋아요순](https://github.com/user-attachments/assets/ea336699-7672-487b-a059-0be9eddbe581)
 
 * 글쓰기
 ![글쓰기](https://github.com/user-attachments/assets/f9c2abb7-5168-44e9-b488-f761db60d3d5)
 
-* 게시글_목록
+* 게시글 목록
 ![게시글_목록](https://github.com/user-attachments/assets/c388713b-117e-43b1-ae72-63341bacb91d)
 
-* 글_읽기
+* 글 읽기
 ![글읽기](https://github.com/user-attachments/assets/39b4f610-5631-4462-9843-def5b45df483)
 
 * 댓글
 ![댓글](https://github.com/user-attachments/assets/314e4378-b877-476f-959c-8cba821a68c1)
 
-* 스크랩한_글_목록
+* 스크랩한 글 목록
 ![스크랩](https://github.com/user-attachments/assets/956a2747-a069-4892-8452-e88a0f21e651)
 
 
