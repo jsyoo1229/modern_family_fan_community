@@ -16,8 +16,10 @@ https://github.com/jsyoo1229/modern_family_fan_community
 
 ## 사용 기술
 **Front-end**<br>
-<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white"> 
+<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
 <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+<img src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white">
 
 **Back-end**<br>
 <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
@@ -26,11 +28,15 @@ https://github.com/jsyoo1229/modern_family_fan_community
 **Database**<br>
 <img src="https://img.shields.io/badge/sqlite3-003B57?style=for-the-badge&logo=sqlite&logoColor=white">
 
+**API**<br>
+<img src="https://img.shields.io/badge/TMDb-01B4E4?style=for-the-badge&logo=tmdb&logoColor=white">
+<img src="https://img.shields.io/badge/TVmaze-000000?style=for-the-badge&logo=tvmaze&logoColor=white">
+
+
+
 **Project management**<br>
 [![Git](https://img.shields.io/badge/Git-black?style=for-the-badge&logo=Git)](https://git-scm.com/)
 [![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=GitHub)](https://github.com/)
-
-## URL 구조 ##
 
 ## URL 구조 ##
 
@@ -70,6 +76,26 @@ https://github.com/jsyoo1229/modern_family_fan_community
 | users | /users/signup/           | POST        | 회원가입                                   |
 | users | /users/profile/<int:pk>/ | GET         | 프로필 조회                                |
 | users | /users/scraps/           | GET         | 현재 사용자의 스크랩한 게시물 목록을 조회    |
+
+## 기능 명세 ##
+```mermaid
+graph TD
+    A[사용자 계정 관리] --> B[회원가입]
+    A --> C[로그인]
+    A --> D[로그아웃]
+    
+    E[게시글 관리] --> F[게시글 작성]
+    E --> G[게시글 수정]
+    E --> H[게시글 삭제]
+    E --> I[게시글 조회]
+    
+    J[댓글 관리] --> K[댓글 작성]
+    J --> L[댓글 수정]
+    J --> M[댓글 삭제]
+
+    N[좋아요 및 스크랩 기능] --> O[좋아요]
+    N --> P[스크랩]
+```
 
 
 
