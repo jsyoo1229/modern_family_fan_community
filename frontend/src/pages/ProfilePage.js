@@ -34,13 +34,18 @@ const ProfilePage = () => {
   return (
     <div className="container mt-5">
       <h2>Your Scrapped Posts</h2>
-      <ul>
+      <hr></hr>
+      <ul style={{ listStyleType: 'none', paddingLeft: 0 }}>
         {scrappedPosts.length === 0 ? (
           <p>No scrapped posts yet.</p>
         ) : (
           scrappedPosts.map((post) => (
             <li key={post.id}>
-              <Link to={`/posts/${post.id}`}>{post.title}</Link>
+              <Link to={`/posts/${post.id}`}>
+              <img src={post.image} alt={post.title} className="img-fluid mb-4" style={{width: '200px', height: '200px', objectFit: 'cover'}}/><br></br>
+              {post.title}
+              <hr></hr>
+              </Link>
             </li>
           ))
         )}
