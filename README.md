@@ -23,7 +23,7 @@ https://github.com/jsyoo1229/modern_family_fan_community
 
 **Back-end**<br>
 <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
-<img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white">
+<img src="https://img.shields.io/badge/django--rest--framework-ff1709?style=for-the-badge&logo=django&logoColor=white">
 
 **Database**<br>
 <img src="https://img.shields.io/badge/sqlite3-003B57?style=for-the-badge&logo=sqlite&logoColor=white">
