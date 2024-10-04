@@ -36,7 +36,7 @@ jobs:
 	    
 	    cd /home/ubuntu/app/modern_family_fan_community/gunicorn
             echo "SECRET_KEY=\"${{ secrets.SECRET_KEY }}\"" > .env
-	    echo "DEBUG='${{ secrets.DEBUG }}'" > .env
+	    echo "DEBUG='${{ secrets.DEBUG }}'" >> .env
 
             source venv/bin/activate
             pip install -r requirements.txt
