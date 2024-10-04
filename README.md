@@ -23,7 +23,7 @@ https://github.com/jsyoo1229/modern_family_fan_community
 
 **Back-end**<br>
 <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
-<img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white">
+<img src="https://img.shields.io/badge/django--rest--framework-ff1709?style=for-the-badge&logo=django&logoColor=white">
 
 **Database**<br>
 <img src="https://img.shields.io/badge/sqlite3-003B57?style=for-the-badge&logo=sqlite&logoColor=white">
@@ -261,6 +261,10 @@ erDiagram
 
 ## 트러블 슈팅
 * 토큰 인증 오류
+처음에는 프론트엔드를 바닐라 자바스크립트로 구현하려 했지만, 인증 과정에서 계속해서 오류가 나고, 디버깅이 어려운 나머지,
+이참에 리액트를 배워서, 리액트로 프론트엔드 코드를 구현하자고 마음 먹었습니다. 때문에, 제작 기간은 길어졌지만, 결과적으로
+프론트엔드 코드가 잘 작동하니, 옳은 선택이었던 것 같습니다.
+
 가장 큰 난관은 토큰 관련 오류였습니다. 회원가입과 로그인은 물론, CRUD 기능에서도 토큰
 
 ## 느낀점
