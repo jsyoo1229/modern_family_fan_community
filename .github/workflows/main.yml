@@ -33,14 +33,14 @@ jobs:
             set -e
             cd /home/ubuntu/app
             git pull origin main
-	    
-	    cd /home/ubuntu/app/modern_family_fan_community/gunicorn
-            echo "SECRET_KEY=\"${{ secrets.SECRET_KEY }}\"" > .env
+  	 
+	 # cd /home/ubuntu/app/modern_family_fan_community/gunicorn		
+	    echo "SECRET_KEY=\"${{ secrets.SECRET_KEY }}\"" > .env      
 	    echo "DEBUG='${{ secrets.DEBUG }}'" >> .env
 
             source venv/bin/activate
             pip install -r requirements.txt
             
-            pyhton3 manage.py collectstatic
+            python3 manage.py collectstatic
             
             sudo systemctl restart config.service
