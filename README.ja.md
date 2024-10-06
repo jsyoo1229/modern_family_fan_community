@@ -152,7 +152,7 @@ https://github.com/jsyoo1229/modern_family_fan_community
 
     N[いいねとスクラップ機能] --> O[いいね]
     N --> P[スクラップ]
-
+```
 
 ## データベースモデリング（ERD）
 ```mermaid
